@@ -1,0 +1,323 @@
+/* GLOBAL
+=========================================================================================*/
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Engagement', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    color: #23d9b7;
+}
+
+h3,h4,h5,h6 {
+    margin: 3em 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin-bottom: 1.5em;
+}
+
+h6 {
+    color: #23d9b7;
+}
+
+a,
+button {
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+hr {
+    border-top: 3px solid #eee;
+    margin: 30px 0;
+}
+
+img {
+    display: inline-block !important;
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.btn {
+    /*font-family: "Open Sans", sans-serif;*/
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1em;
+    padding: 15px 30px;
+}
+
+/* COVER
+=========================================================================================*/
+
+.cover-img1 {
+    background: url(../images/banner1.jpg);
+}
+
+.cover-img2 {
+    background: url(../images/banner2.jpg);
+}
+
+.cover-img3 {
+    background: url(../images/banner3.jpg);
+}
+
+.cover-img4 {
+    background: url(../images/banner4.jpg);
+}
+
+.parallax {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /*display: none;*/
+}
+
+.tint {
+    background: -moz-linear-gradient(-45deg,  rgba(214,81,110,0.2) 0%, rgba(214,81,110,0.2) 1%, rgba(82,178,189,0.2) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(214,81,110,0.2)), color-stop(1%,rgba(214,81,110,0.2)), color-stop(100%,rgba(82,178,189,0.2))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(214,81,110,0.2) 0%,rgba(214,81,110,0.2) 1%,rgba(82,178,189,0.2) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(214,81,110,0.2) 0%,rgba(214,81,110,0.2) 1%,rgba(82,178,189,0.2) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(214,81,110,0.2) 0%,rgba(214,81,110,0.2) 1%,rgba(82,178,189,0.2) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(214,81,110,0.2) 0%,rgba(214,81,110,0.2) 1%,rgba(82,178,189,0.2) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33d6516e', endColorstr='#3352b2bd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: block;
+    height: 95%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.welcome {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top:38%;
+    width: 100%;
+    -webkit-transform: translateY(-33%);
+    -moz-transform: translateY(-33%);
+    -ms-transform: translateY(-33%);
+    -o-transform: translateY(-33%);
+    transform: translateY(-33%);
+}
+
+.welcome p {
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.welcome span {
+    border: 0;
+    border-top: 1px solid #fff;
+    display: inline-block;
+    margin: 6px 10px;
+    width: 150px;
+}
+
+.welcome i {
+    font-size: 18px;
+}
+
+.green-btn {
+    background-color: #23d7b9;
+    border-color: #23d7b9; 
+}
+
+.green-btn:hover,
+.green-btn:focus,
+.green-btn.focus,
+.green-btn:active,
+.green-btn.active {
+    background-color: #34bfa6;
+    border-color: #34bfa6; 
+}
+
+.green-outline-btn {
+    background-color: transparent;
+    border-color: #23d7b9; 
+    color: #23d7b9; 
+}
+
+.green-outline-btn:hover,
+.green-outline-btn:focus,
+.green-outline-btn.focus,
+.green-outline-btn:active,
+.green-outline-btn.active {
+    background-color: #23d7b9;
+    border-color: #23d7b9;
+}
+
+/* HEADINGS
+=========================================================================================*/
+
+.heading {
+    padding-bottom: 60px;
+}
+
+.heading span {
+    border: 0;
+    border-top: 1px solid #23d9b7;
+    display: inline-block;
+    margin: 20px 10px 5px 10px;
+    width: 60px;
+}
+
+.heading i {
+    color: #23d9b7;
+}
+
+/* MAIN BANNER
+=========================================================================================*/
+
+.mobile-divider {
+    display: none;
+}
+
+.blog-short {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.blog-short h5,
+.blog-short h6,
+.blog-short p {
+    padding: 0 30px;
+}
+
+.blog-short h5 {
+    margin-bottom: 10px;
+}
+
+.blog-short h6 {
+    margin-top: 0;
+}
+
+.device-img {
+    margin-top: 50px;
+}
+
+/* FOOTER
+=========================================================================================*/
+
+footer {
+    background: #2d343a;
+    padding: 50px 0;
+    color: #737a80;
+}
+
+/* RESPONSIVE STYLES
+=========================================================================================*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Large devices (large desktops, 1200px and up)
+----------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+
+}
+
+/* Medium devices (desktops, 992px and up)
+----------------------------------------------------------------------------------------*/
+@media (max-width: 991px) {
+
+}
+
+/* Small devices (tablets, 768px and up)
+----------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+
+    .btn {
+        white-space: normal;
+    }
+
+    .text-left,
+    .text-right,
+    .col-sm-3 {
+        text-align: center !important;
+    }
+
+    .mobile-divider {
+        color: #000;
+        display: block;
+        margin: 30px 0;
+        opacity: 0.1;
+        text-align: center;
+    }
+
+    .mobile-divider span {
+        border-top: 1px solid #000;
+        display: inline-block;
+        margin: 4px 10px;
+        width: 90px;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+
+    .welcome span {
+        width: 90px;
+    }
+
+    .welcome {
+        top:30%;
+        width: 100%;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .heading {
+        padding-bottom: 30px;
+    }
+
+    .parallax {
+        height: 120%;
+    }
+
+}
